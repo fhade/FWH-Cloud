@@ -1,0 +1,124 @@
+---
+# The include keyword imports job definitions that we've determined are required
+# for deploying on Horizon and common across starter kits. This allows us to
+# apply changes in one place and ensures that your CI is always using the latest
+# Horizon scripts. If you wish to learn more about the `include` keyword, visit
+# the GitLab CI/CD doc: https://docs.gitlab.com/ee/ci/yaml/#include
+include:
+  - project: 'horizon/frontend/templates/gitlab-ci-templates'
+    ref: main
+    file: '/scripts/templates/starter-kit.yml'
+
+# OPTIONAL: We're using an alpine image for our jobs that require node. You can
+# select another docker image that better suits your needs if that's the case.
+.node_image: &node_image
+  tags:
+    - square_linux_2
+  image:
+    name: node:18-alpine
+    entrypoint: ['sh', '-c', 'exec su node -c sh']
+  before_script:
+    - npm ci --ignore-scripts
+
+# OPTIONAL: We're using an python official image (3.9 here) and install the dependencies in the requirements.txt (to have the same version between the ci and the production env) 
+.container_mkdocs: &container_mkdocs
+  tags:
+    - square_linux_2
+  image:
+    name: python:3.11.4-alpine3.18
+  before_script:
+    - export HTTP_PROXY="http://proxy.ubisoft.org:3128"
+    - export HTTPS_PROXY="http://proxy.ubisoft.org:3128"
+    - apk upgrade --update-cache
+    - apk add --no-cache git git-fast-import openssh libffi-dev
+    - apk add --no-cache --virtual .build gcc musl-dev
+    - pip install -r requirements.txt
+
+# REQUIRED: Define the path of your build in the variable below. We reference
+# this value later in this file for building and deploying. e.g. VueJs builds
+# are sent to `dist`, React and LitElement `build`. In this case, MkDocs builds
+# the static site to `site`, so we've defined it as such.
+variables:
+  BUILD_PATH: 'site'
+
+# RECOMMENDED: Lint your markdown files before building anything. we're using
+# the markdownlint-cli npm package to lint our .md files to ensure that our docs
+# maintain a consistent style. Since the Horizon container has node installed,
+# we can simply run `npm ci` and then use the package's command or the one
+# we've defined in our package.json (npm run lint).
+lint:
+  <<: *node_image
+  interruptible: true
+  stage: test
+  allow_failure: true
+  only:
+    - branches
+  script:
+    - npm run lint
+
+# REQUIRED: Build your static site and store the build as a Gitlab Artifact,
+# which will be used in our deployment scripts later. In this case, we're
+# building MkDocs documentation using the Material theme. Since we're using the
+# MkDocs container defined previously, we just need to run the build command and
+# then store the build as an artifact in GitLab.
+# OPTIONAL: We've set the build artifact expiry time to `1 week` by default, but
+# you can modify this value as you wish.
+build:
+  <<: *container_mkdocs
+  interruptible: true
+  stage: build
+  needs: []
+  script:
+    - mkdocs build
+  artifacts:
+    name: "build"
+    expire_in: 1 week
+    paths:
+      - $BUILD_PATH
+
+# OPTIONAL: You can choose how to name your branch vstage. We're using GitLab's
+# CI/CD Predefined variables to handle how we name our branch's vstage. Using
+# the slugified version of our branch name (as $CI_ENVIRONMENT_SLUG) ensures
+# that the vstage name will be valid in Horizon.
+deploy:branch:
+  interruptible: true
+  environment:
+    name: $CI_COMMIT_REF_SLUG
+
+# RECOMMENDED: We've defined the `stop:vstage` job as a manual job to be
+# triggered by a human. This will remove an environment from GitLab and its
+# associated vstage on Horizon. We recommend removing environments/vstages once
+# the branch has been merged in the main branch.
+stop:vstage:
+  environment:
+    name: $CI_COMMIT_REF_SLUG
+
+# OPTIONAL: You can choose a vstage name that suits your team's existing naming
+# standards (e.g. uat, cert, qa), simply change `staging` for whatever you like.
+# You may also specify for this job to apply to branches other than `only`
+# main, depending on your desired flow.
+# REQUIRED: Extend the `.deploy` anchor which is imported via the `include` file
+# specified above.
+deploy:staging:
+  extends:
+    - .deploy
+  only:
+    - main
+  environment:
+    name: staging
+
+# RECOMMENDED: We've defined the `promote:prod` job as a manual job to be
+# triggered by a human, which promotes your build to `prod` vstage on Horizon.
+# OPTIONAL: You can choose to define a different promote flow, but be sure to
+# remove the `url` key/value if your environment name is anything but `prod`.
+# REQUIRED: Extend the `.promote` anchor which is imported via the `include`
+# file specified above.
+promote:prod:
+  extends:
+    - .promote
+  only:
+    - main
+  environment:
+    name: prod
+    url: https://${HORIZON_SLUG}.${HORIZON_HOST}
+  when: manual

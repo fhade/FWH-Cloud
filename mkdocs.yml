@@ -1,0 +1,96 @@
+---
+# Project info
+site_name: Enterprise Security
+site_author: Francois Hade
+site_url: https://fhade.github.io/FWH-CLoud
+
+# Repository
+repo_name: FWH-CLoud
+repo_url: https://github.com/fhade/FWH-CLoud
+
+# Copyright
+copyright: Copyright &copy; Ubisoft SRM Enterprise Security Team - 2024
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.indexes
+  favicon: _extras/images/ubifavicon.png
+  logo: _extras/images/nsg.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fhade/FWH-CLoud
+    - icon: fontawesome/brands/microsoft
+      link: https://azure.microsoft.com/en-ca/explore/security
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ubisoft
+    - icon: fontawesome/brands/steam
+      link: https://store.steampowered.com/publisher/ubisoft
+    - icon: fontawesome/brands/napster
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - meta
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - fix-trailing-slash.js
+
+# Plugins
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true

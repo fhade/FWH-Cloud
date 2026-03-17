@@ -1,0 +1,40 @@
+# Set the WebSite link on the Square page of your product
+ProjectWebSite: https://srm-public-cloud-architect.horizon.ubisoft.org/
+
+# Set the DisplayName of the project page shown on Square Web
+DisplayName: srm-public-cloud-architect
+
+# Set the description for the project
+# Will override GitLab project description if there is any
+Description: srm-public-cloud-architect
+
+# Set the support platform's URL
+SupportUrl: 'https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect/-/issues'
+
+# Set the documentation button's URL
+DocumentationUrl: https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect/-/wikis/home
+
+# Set the URL of the chatrooms
+# Multiple chatrooms can be specified, separated by ";"
+Chatroom: https://teams.microsoft.com/l/team/19%3a09cf3b87928f4a1c9d313f57dfad5953%40thread.skype/conversations?groupId=bd9e8162-c4b5-4a3f-b4da-51850cfc7531&tenantId=e01bd386-fa51-4210-a2a4-29e5ab6f7ab1
+
+AutoAssign:
+  Enabled: true
+  Source: CodeOwners
+  # MailingListAddress: mailinglist@ubisoft.com
+  Mode: All   # RoundRobin | Random
+  Target: Reviewer   # Assignee | Reviewer
+
+AutoGrantDeveloperRole:
+  Enabled: true
+
+MergeBot:
+  Enabled: true
+
+UpdateDependencies:
+  Enabled: true
+  Origin: All # Ubisoft | External | All
+  Schedule: Monthly # Instant | Daily | Weekly | Monthly
+
+SmartRetry:
+  RetryCount: 2  # Retry count for failed jobs deemed flaky

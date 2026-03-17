@@ -1,0 +1,4 @@
+RELEASE_URL=https://gitlab-ncsa.ubisoft.org/horizon/frontend/templates/mkdocs-starter-kit/tree/0ee30b454b602a8f1193f9d27ed500d4b693dbe1
+RELEASE_DESC=""
+RELEASE_SHA=0ee30b454b602a8f1193f9d27ed500d4b693dbe1
+RELEASE_VERSION=1.1.1

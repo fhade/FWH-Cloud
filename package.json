@@ -1,0 +1,22 @@
+{
+  "name": "srm-public-cloud-architect",
+  "version": "1.1.1",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "mkdocs serve",
+    "build": "mkdocs build",
+    "lint": "markdownlint docs/",
+    "format": "markdownlint docs/ --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "markdownlint-cli": "^0.35.0"
+  },
+  "devDependencies": {
+    "gitlab-ci-lint": "^1.1.0",
+    "husky": "^8.0.3",
+    "yaml-lint": "^1.7.0"
+  }
+}

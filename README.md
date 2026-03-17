@@ -1,4 +1,4 @@
-# srm-public-cloud-architect
+# public-cloud-architect
 
 [![Build status](https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect/badges/main/build.svg)](https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect/pipelines)
 

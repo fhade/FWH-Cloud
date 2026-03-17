@@ -1,12 +1,12 @@
-# srm-public-cloud-architect
-
-[![Build status](https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect/badges/main/build.svg)](https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect/pipelines)
+# Documentation Page - FH Test for Diego
 
 This starter kit is based on the [Material theme](https://squidfunk.github.io/mkdocs-material/)
 for [MkDocs](https://www.mkdocs.org/), a static site generator built for
 documentation.
 
 ## Install
+
+### Manual
 
 1. Ensure that you're running Node >= 8.11.2
 
@@ -22,25 +22,26 @@ documentation.
 	1. Create virtual environment with a folder `env`
 
       	```
-      	python3 -m venv env
+      		python3 -m venv env
       	```
     	
 	2. Activate virtual environment
 
-		Note: Each time the terminal is opened you need to activate the virtual environment.
+		!!! note ""
+			Each time the terminal is opened you need to activate the virtual environment.
 
 		- Windows:
-
-        ```
-        .\env\Scripts\activate
-        ```
+		
+		  ```
+ 		  .\env\Scripts\activate
+      		  ```
       	
 		- Linux:
 		
-        ```
-        source env/bin/activate
-        ```
-      
+	 	  ```
+        		source env/bin/activate
+                  ```
+	
 	
 	3. Install the requirements
 
@@ -54,6 +55,7 @@ documentation.
       	mkdocs serve
       	```
 
+
 ## Commands
 
 - `npm run lint`: Runs Markdownlint-cli and outputs linting errors to the
@@ -66,8 +68,7 @@ documentation.
   build the site before committing though -- we handle this in the CI defined in
   the `.gitlab-ci.yml` file.
 
-### Linting rules
-
+!!! note "Linting rules"
     We've configured Markdownlint to use the ["Relaxed Rules"](https://github.com/DavidAnson/markdownlint/blob/master/style/relaxed.json)
     by default. Refer to the [full list of rules](https://github.com/DavidAnson/markdownlint#rules--aliases)
     if you wish to add or modify your linting rules.
@@ -98,9 +99,9 @@ We've also enabled some plugins in the `mkdocs.yml` file, notably:
 - [Revision date](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)   for outputting the git revision date of the corresponding markdown file at the bottom   of the page
 - [Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin) 
   an mkdocs plugin that simplifies configuring page titles and their order
-- [Minify](https://github.com/byrnereese/mkdocs-minify-plugin)
-  for html/css/js minification
-- [Redirects](https://github.com/mkdocs/mkdocs-redirects) 
+- [Minify](https://github.com/byrnereese/mkdocs-minify-plugin) 
+  for html/css/js minification 
+- [Redirects](https://github.com/mkdocs/mkdocs-redirects)
   to create page redirects (e.g. for moved/renamed pages)
 
 If you wish to add a plugin, head to the [Setup](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/) section in the Material for MkDocs documentation to see which are available.

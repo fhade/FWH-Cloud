@@ -41,7 +41,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/fhade/FWH-CLoud
+      link: https://github.com/fhade/FWH-Cloud
     - icon: fontawesome/brands/microsoft
       link: https://azure.microsoft.com/en-ca/explore/security
     - icon: fontawesome/brands/docker

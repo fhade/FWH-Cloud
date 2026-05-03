@@ -94,3 +94,11 @@ plugins:
       minify_css: true
       htmlmin_opts:
           remove_comments: true
+
+# Navigation
+nav:
+  - Home: index.md
+  - Azure: azure/index.md
+  - Documentation: documentation/docs.md
+  - Cloud Policy: policy/azpolicy/azpolicy.md
+  - Blog: blog/mfabombing.md

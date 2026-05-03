@@ -1,10 +1,11 @@
-/* Increase logo size */
-.md-header__logo {
-  width: auto !important;
+/* Increase logo size in header */
+.md-header__button.md-logo img {
+  width: 120px !important;
   height: auto !important;
 }
 
-.md-header__logo img {
+/* Increase logo size in sidebar */
+.md-nav__button.md-logo img {
   width: 120px !important;
   height: auto !important;
 }

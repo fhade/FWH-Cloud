@@ -44,7 +44,7 @@ could impact other users on the shared Kubernetes cluster. These actions are not
 
 ### Horizon on RCC
 
-[Horizon](https://horizon.fwh.org/) was traditionally hosted on UKS.
+Horizon was traditionally hosted on UKS.
 The Kubernetes clusters were created with Terraform by using the `openstack`
 and `uks` providers directly.
 This resulted in a quite verbose and involved code that managed both
@@ -58,4 +58,4 @@ leaving us free to dedicate our time to the platform development.
 
 ## Still unsure which service to use?
 
-Reach out to [Rome DevRel team](https://teams.microsoft.com/l/channel/19%3a0c2ceaa14505416d9ec5931e1c96144b%40thread.tacv2/DevRel?groupId=2e8529df-0c08-4d34-a27e-08c9d0a37274&tenantId=e01bd386-fa51-4210-a2a4-29e5ab6f7ab1) to further discuss your use case.
+Reach out to Rome DevRel team to further discuss your use case.

@@ -1,5 +1,5 @@
 # Set the WebSite link on the Square page of your product
-ProjectWebSite: https://Security Architect-public-cloud-architect.horizon.ubisoft.org/
+ProjectWebSite: https://Security Architect-public-cloud-architect.horizon.fwh.org/
 
 # Set the DisplayName of the project page shown on Square Web
 DisplayName: Security Architect-public-cloud-architect
@@ -9,10 +9,10 @@ DisplayName: Security Architect-public-cloud-architect
 Description: Security Architect-public-cloud-architect
 
 # Set the support platform's URL
-SupportUrl: 'https://gitlab-ncsa.ubisoft.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/-/issues'
+SupportUrl: 'https://gitlab-ncsa.fwh.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/-/issues'
 
 # Set the documentation button's URL
-DocumentationUrl: https://gitlab-ncsa.ubisoft.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/-/wikis/home
+DocumentationUrl: https://gitlab-ncsa.fwh.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/-/wikis/home
 
 # Set the URL of the chatrooms
 # Multiple chatrooms can be specified, separated by ";"
@@ -21,7 +21,7 @@ Chatroom: https://teams.microsoft.com/l/team/19%3a09cf3b87928f4a1c9d313f57dfad59
 AutoAssign:
   Enabled: true
   Source: CodeOwners
-  # MailingListAddress: mailinglist@ubisoft.com
+  # MailingListAddress: mailinglist@fwh.com
   Mode: All   # RoundRobin | Random
   Target: Reviewer   # Assignee | Reviewer
 
@@ -33,7 +33,7 @@ MergeBot:
 
 UpdateDependencies:
   Enabled: true
-  Origin: All # Ubisoft | External | All
+  Origin: All # FWH | External | All
   Schedule: Monthly # Instant | Daily | Weekly | Monthly
 
 SmartRetry:

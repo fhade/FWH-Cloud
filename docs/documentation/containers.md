@@ -3,7 +3,7 @@ title: Containers
 ---
 
 # Welcome to Rome Containers
-Rome Containers provides containerization solutions for workloads within Ubisoft. Whether you need to run a simple
+Rome Containers provides containerization solutions for workloads within FWH. Whether you need to run a simple
 web service or need a full-fledged Kubernetes clusters to run a full stack of operators and applications, Rome
 Containers provides solutions to meet those needs.
 
@@ -44,7 +44,7 @@ could impact other users on the shared Kubernetes cluster. These actions are not
 
 ### Horizon on RCC
 
-[Horizon](https://horizon.ubisoft.org/) was traditionally hosted on UKS.
+[Horizon](https://horizon.fwh.org/) was traditionally hosted on UKS.
 The Kubernetes clusters were created with Terraform by using the `openstack`
 and `uks` providers directly.
 This resulted in a quite verbose and involved code that managed both

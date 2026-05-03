@@ -49,9 +49,9 @@ extra:
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/mkdocs-material/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ubisoft
+      link: https://twitter.com/fwh
     - icon: fontawesome/brands/steam
-      link: https://store.steampowered.com/publisher/ubisoft
+      link: https://store.steampowered.com/publisher/fwh
     - icon: fontawesome/brands/napster
 
 # Extensions

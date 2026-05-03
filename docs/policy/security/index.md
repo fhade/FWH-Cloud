@@ -1,10 +1,10 @@
 # Overview
 
-This site is the core end-user documentation for our public cloud providers at Ubisoft. You will find dedicated sections about all main providers we are working with, where we share guidelines around:
+This site is the core end-user documentation for our public cloud providers at FWH. You will find dedicated sections about all main providers we are working with, where we share guidelines around:
 
 - How to start using public cloud platforms ?
 - Security best practices
-- Network connectivity with Ubisoft ecoystem
+- Network connectivity with FWH ecoystem
 - Cost optimizations
 
 ## Officially Supported Providers
@@ -22,5 +22,5 @@ Support in this context would mean that Rome teams are working to make their ser
 
 ## Information
 
-Please note that this documentation website is being refreshed, and we value your feedback about it, please contact us at finops-cloud-governance@ubisoft.com.
+Please note that this documentation website is being refreshed, and we value your feedback about it, please contact us at finops-cloud-governance@fwh.com.
 

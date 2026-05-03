@@ -1,6 +1,6 @@
 # Security Architect-public-cloud-architect
 
-[![Build status](https://gitlab-ncsa.ubisoft.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/badges/main/build.svg)](https://gitlab-ncsa.ubisoft.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/pipelines)
+[![Build status](https://gitlab-ncsa.fwh.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/badges/main/build.svg)](https://gitlab-ncsa.fwh.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect/pipelines)
 
 This starter kit is based on the [Material theme](https://squidfunk.github.io/mkdocs-material/)
 for [MkDocs](https://www.mkdocs.org/), a static site generator built for

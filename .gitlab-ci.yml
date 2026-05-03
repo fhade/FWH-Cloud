@@ -27,8 +27,8 @@ include:
   image:
     name: python:3.11.4-alpine3.18
   before_script:
-    - export HTTP_PROXY="http://proxy.ubisoft.org:3128"
-    - export HTTPS_PROXY="http://proxy.ubisoft.org:3128"
+    - export HTTP_PROXY="http://proxy.fwh.org:3128"
+    - export HTTPS_PROXY="http://proxy.fwh.org:3128"
     - apk upgrade --update-cache
     - apk add --no-cache git git-fast-import openssh libffi-dev
     - apk add --no-cache --virtual .build gcc musl-dev

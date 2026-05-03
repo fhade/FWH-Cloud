@@ -92,8 +92,6 @@ plugins:
       minify_html: true
       minify_js: true
       minify_css: true
-      htmlmin_opts:
-          remove_comments: true
 
 # Navigation
 nav:
@@ -101,4 +99,11 @@ nav:
   - Documentation: documentation/docs.md
   - Cloud Policy: policy/azpolicy/azpolicy.md
   - Blog: blog/mfabombing.md
-  - Azure: azure/index.md
+  - Azure:
+      - Azure: azure/index.md
+      - CAF:
+          - Overview: azure/caf/index.md
+      - WAF:
+          - Overview: azure/waf/index.md
+      - Landing Zone:
+          - Overview: azure/landing-zone/index.md

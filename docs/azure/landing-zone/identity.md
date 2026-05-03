@@ -6,7 +6,7 @@ Identity and Access Management (IAM) is the foundation of landing zone security.
 
 ## Key Components
 
-### Azure Active Directory (Azure AD)
+### Microsoft Entra ID
 - Central identity provider for your organization
 - Manages users, groups, and application permissions
 - Enables single sign-on (SSO) across cloud and on-premises
@@ -25,7 +25,7 @@ Identity and Access Management (IAM) is the foundation of landing zone security.
        │
        ▼
 ┌──────────────────────────────────────┐
-│     Azure Active Directory (Azure AD)│
+│     Microsoft Entra ID│
 │  - Authentication                    │
 │  - Authorization                     │
 │  - Group Management                  │
@@ -84,7 +84,7 @@ Better:      User → Group → Role Assignment
 
 ## Resources
 
-- [Azure AD Documentation](https://docs.microsoft.com/en-us/azure/active-directory/)
+- [Microsoft Entra ID Documentation](https://docs.microsoft.com/en-us/entra/identity/)
 - [RBAC Documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/)
-- [Best Practices for Azure AD](https://docs.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices)
-- [Managed Identities](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/)
+- [Best Practices for Microsoft Entra ID](https://docs.microsoft.com/en-us/azure/security/fundamentals/identity-management-best-practices)
+- [Managed Identities](https://docs.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/)

@@ -14,7 +14,7 @@ An Azure Landing Zone is a pre-configured environment that provides the foundati
 
 ## Core Components
 
-- **Identity and Access Management** - Azure AD integration and role-based access control
+- **Identity and Access Management** - Microsoft Entra ID integration and role-based access control
 - **Network Architecture** - Virtual networks, subnets, and connectivity patterns
 - **Governance** - Management groups, policies, and compliance frameworks
 - **Security** - Firewalls, threat protection, and compliance monitoring

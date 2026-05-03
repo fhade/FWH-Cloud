@@ -97,6 +97,11 @@ plugins:
 nav:
   - Home: index.md
   - Documentation: documentation/docs.md
+
+# Navigation
+nav:
+  - Home: index.md
+  - Documentation: documentation/docs.md
   - Cloud Policy: policy/azpolicy/azpolicy.md
   - Blog: blog/mfabombing.md
   - Azure:
@@ -107,3 +112,8 @@ nav:
           - Overview: azure/waf/index.md
       - Landing Zone:
           - Overview: azure/landing-zone/index.md
+          - Fundamentals: azure/landing-zone/fundamentals.md
+          - Architecture: azure/landing-zone/architecture.md
+          - Identity & Access: azure/landing-zone/identity.md
+          - Networking: azure/landing-zone/networking.md
+          - Governance: azure/landing-zone/governance.md

@@ -20,7 +20,7 @@ theme:
     - navigation.instant
     - navigation.indexes
   favicon: _extras/images/ubifavicon.png
-  logo: _extras/images/nsg.svg
+  logo: _extras/images/Email_without_slogan.png
   icon:
     repo: fontawesome/brands/github
   palette:

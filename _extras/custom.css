@@ -1,25 +1,41 @@
+/* Expand header height to accommodate larger logo */
+.md-header {
+  height: auto !important;
+  min-height: 120px !important;
+}
+
+.md-header__inner {
+  height: auto !important;
+}
+
 /* Increase logo size in header */
 .md-header__button.md-logo {
-  width: 200px !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 280px !important;
   height: auto !important;
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 .md-header__button.md-logo img {
-  width: 200px !important;
+  width: 280px !important;
   height: auto !important;
-  max-width: 100% !important;
+  max-width: none !important;
 }
 
 /* Increase logo size in sidebar */
 .md-nav__button.md-logo {
-  width: 200px !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 280px !important;
   height: auto !important;
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 .md-nav__button.md-logo img {
-  width: 200px !important;
+  width: 280px !important;
   height: auto !important;
-  max-width: 100% !important;
+  max-width: none !important;
 }

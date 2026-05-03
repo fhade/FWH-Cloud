@@ -1,6 +1,6 @@
 # MkDocs Starter Kit
 
-![Max Security](images/max-Security Architect.png)
+![Max Security](images/security-max.png)
 
 This starter kit is based on the [Material theme](https://squidfunk.github.io/mkdocs-material/)
 for [MkDocs](https://www.mkdocs.org/), a static site generator built for

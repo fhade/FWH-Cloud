@@ -78,6 +78,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra_css:
+  - _extras/custom.css
+
 extra_javascript:
   - fix-trailing-slash.js
 

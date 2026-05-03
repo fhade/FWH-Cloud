@@ -19,7 +19,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.instant
     - navigation.indexes
-  favicon: _extras/images/ubifavicon.png
+  favicon: _extras/images/my_logo.png
   logo: _extras/images/Email_without_slogan.png
   icon:
     repo: fontawesome/brands/github

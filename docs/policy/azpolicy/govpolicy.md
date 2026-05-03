@@ -14,14 +14,14 @@
 |------|---|
 | **Description** | This policy enables you to restrict the locations your organization can specify when deploying resources. Use to enforce your geo-compliance requirements. Excludes resource groups, Microsoft.AzureActiveDirectory/b2cDirectories, and resources that use the 'global' region. |
 | **Policy Effect** | Deny |
-| **SRM Notes** |  Ensures deployed resources and resource groups belong to the list set in the allowed locations. (East Us, "More to be confirmed") |
+| **Security Architect Notes** |  Ensures deployed resources and resource groups belong to the list set in the allowed locations. (East Us, "More to be confirmed") |
 
 
 | ![Policy](policy.png){: style="height:30px;width:55px"} | **Allowed virtual machine size SKUs**  |
 |------|---|
 | **Description** | This policy enables you to specify a set of virtual machine size SKUs that your organization can deploy. |
 | **Policy Effect** | Deny |
-| **SRM Notes** | For Governance purposes, the following VM SKU's have been block from deployment - M-Series, L-Series, G-Series, H-Series, N-Series |
+| **Security Architect Notes** | For Governance purposes, the following VM SKU's have been block from deployment - M-Series, L-Series, G-Series, H-Series, N-Series |
 
 
 

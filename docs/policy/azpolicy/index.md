@@ -13,9 +13,9 @@ By enforcing compliance, preventing misconfiguration, and enhancing security, th
 
 
 !!!note "Work in progress"
-      The policies below are currently being developed and are not yet ready for full production. The SRM Security team is working to establish a production security baseline as soon as possible.
+      The policies below are currently being developed and are not yet ready for full production. The Security Architect Security team is working to establish a production security baseline as soon as possible.
 
 !!!warning "Important"
-      The policies below **should never be modified** without the approval of **SRM Security Architects**.
+      The policies below **should never be modified** without the approval of **Security Architect Security Architects**.
 
 

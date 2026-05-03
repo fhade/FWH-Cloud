@@ -1,6 +1,6 @@
 # Azure Policy
 
-The Organization Policy Service gives you centralized and programmatic control over our GCP organization's cloud resources. Public Cloud team and SRM Cloud Security will be able to configure constraints across our entire Ubisoft resource hierarchy.
+The Organization Policy Service gives you centralized and programmatic control over our GCP organization's cloud resources. Public Cloud team and Security Architect Cloud Security will be able to configure constraints across our entire Ubisoft resource hierarchy.
 
 ## Benefits
 - **Centralize control to configure restrictions on how your organization’s resources can be used.**
@@ -10,7 +10,7 @@ The Organization Policy Service gives you centralized and programmatic control o
 ## Organization Policies in place at Ubisoft
 
 !!!error "IMPORTANT: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 ### **Domain restricted sharing** 
 
@@ -23,7 +23,7 @@ The Organization Policy Service gives you centralized and programmatic control o
 | **Domains Accepted** | ubisoft.com (Primary Domain), ivory-tower.fr (Secondary Domain), massive.se (Secondary Domain), redstorm.com (Secondary Domain) |
 
 !!!warning "IMPORTANT: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 ### **Skip Default Network Creation** 
 
@@ -45,31 +45,31 @@ The Organization Policy Service gives you centralized and programmatic control o
 
 
 !!!example "EXAMPLE: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!bug "BUG: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!tip "TIP: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!success "SUCCESS: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!abstract "ABSTRACT: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!note "NOTE: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!question "QUESTION: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!failure "FAILURE: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!!danger "DANGER: Ubisoft GCP Organization Policies"
-      The organization policies below **should never be changed** without the approval of **SRM Cloud Security Architects**.
+      The organization policies below **should never be changed** without the approval of **Security Architect Cloud Security Architects**.
 
 !!! note
 

@@ -24,7 +24,7 @@ The consequences of falling victim to MFA bombing can be severe. Unauthorized ac
 
 **Verify the Source:** Before approving any MFA prompt, users should verify the source of the request. Legitimate MFA prompts will only be triggered by actions initiated by the user, such as attempting to log in or make account changes.
 
-If it is happening to **your work account**, immediately contact SRM via SOS/ so we can fully stop the potential attack.
+If it is happening to **your work account**, immediately contact Security Architect via SOS/ so we can fully stop the potential attack.
 
 
 Finally, as cyber threats evolve, we must remain vigilant and adapt to new attack vectors like MFA bombing. By questioning the legitimacy of MFA prompts and taking the time to verify their authenticity, we can significantly reduce the risk of unauthorized access and protect our sensitive information and Ubisoft from external threats.

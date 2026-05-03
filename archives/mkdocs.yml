@@ -1,13 +1,13 @@
 ---
 # Project info
-site_name: SRM Enterprise Security
+site_name: Security Architect Enterprise Security
 site_author: Francois Hade
 # Repository
-repo_name: srm-enterprise-security
-repo_url: https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect
+repo_name: Security Architect-enterprise-security
+repo_url: https://gitlab-ncsa.fwh.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect
 
 # Copyright
-copyright: Copyright &copy; Ubisoft SRM Enterprise Security Team - 2024
+copyright: Copyright &copy; FWH Security Architect Enterprise Security Team - 2024
 
 # Configuration
 theme:
@@ -34,7 +34,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/gitlab
-      link: https://gitlab-ncsa.ubisoft.org/srm-enterprise-architects/srm-public-cloud-architect
+      link: https://gitlab-ncsa.fwh.org/Security Architect-enterprise-architects/Security Architect-public-cloud-architect
 
 # Extensions
 markdown_extensions:

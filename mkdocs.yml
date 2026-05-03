@@ -2,9 +2,10 @@
 # Project info
 site_name: Enterprise Security
 site_url: https://fhade.github.io/FWH-Cloud
+site_author: FWH Cloud
 
 # Repository
-repo_name: FWH-CLoud
+repo_name: FWH-Cloud
 repo_url: https://github.com/fhade/FWH-Cloud
 
 # Copyright

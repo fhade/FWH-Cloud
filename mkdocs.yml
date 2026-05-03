@@ -123,6 +123,29 @@ nav:
           - Fundamentals: azure/waf/fundamentals.md
           - Reliability: azure/waf/reliability.md
           - Security: azure/waf/security.md
+
+# Navigation
+nav:
+  - Home: index.md
+  - Documentation: documentation/docs.md
+  - Cloud Policy: policy/azpolicy/azpolicy.md
+  - Blog: blog/mfabombing.md
+  - Azure:
+      - Azure: azure/index.md
+      - CAF:
+          - Overview: azure/caf/index.md
+          - Fundamentals: azure/caf/fundamentals.md
+          - Strategy: azure/caf/strategy.md
+          - Plan: azure/caf/plan.md
+          - Ready: azure/caf/ready.md
+          - Adopt: azure/caf/adopt.md
+          - Govern: azure/caf/govern.md
+          - Manage: azure/caf/manage.md
+      - WAF:
+          - Overview: azure/waf/index.md
+          - Fundamentals: azure/waf/fundamentals.md
+          - Reliability: azure/waf/reliability.md
+          - Security: azure/waf/security.md
           - Cost Optimization: azure/waf/cost-optimization.md
           - Operational Excellence: azure/waf/operational-excellence.md
           - Performance Efficiency: azure/waf/performance-efficiency.md

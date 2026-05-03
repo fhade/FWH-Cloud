@@ -98,7 +98,7 @@ plugins:
 # Navigation
 nav:
   - Home: index.md
-  - Azure: azure/index.md
   - Documentation: documentation/docs.md
   - Cloud Policy: policy/azpolicy/azpolicy.md
   - Blog: blog/mfabombing.md
+  - Azure: azure/index.md
